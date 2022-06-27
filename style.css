@@ -353,12 +353,16 @@ body{
     }
     #btn-detail{
         font-size: 12px;
+        width: 100px;
     }
     #group-title{
         display: none;
     }
     .group-container{
         font-size: 10px;
+    }
+    #btn-detail{
+        margin-left: 20px;
     }
 }
 
@@ -399,6 +403,28 @@ body{
     }
     .group-header{
         padding: 2px;
+    }
+    #input-text{
+        font-size: 12px;
+        outline: 0px;
+        border: 0px;
+        margin-left: 10px;
+        padding: 2px 0px 2px 0px
+    }
+    
+    #btnSubmit{
+        height: 20px;
+        font-size: 12px;
+        padding:0px 10px 0px 10px;
+    }
+
+    #join-us{
+        font-size: 12px;
+        padding:5px 10px 5px 10px;
+    }
+    #input-container{
+        height: 20px;
+        margin-top: 0px;
     }
 
 }
