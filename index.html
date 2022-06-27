@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a9d7cdc151.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet"><link>
+    <title>World cup 2022 count down</title>
+</head>
+<body>
+    <main class="main-container">
+        <div id=content-container>
+            <div id="title">
+                    <h1 id="title-cup">World Cup Qatar 2022</h1>
+                    <h3 id="countdown-text">tournament starts in:</h3>
+                <h3 id="btn-detail">Groups Table</h3>
+            </div>
+            <div id="countdowns-container">
+                <div id="day-container" class="countdown-container">
+                    <h1 class="countdown-number" id="num-day"></h1>
+                    <p class="countdown-label">Days</p>
+                </div>
+                <h1 class="colon">:</h1>
+                <div id="hour-container" class="countdown-container">
+                    <h1 class="countdown-number" id="num-hour"></h1>
+                    <p class="countdown-label">Hours</p>
+                </div>
+                <h1 class="colon">:</h1>
+                <div id="minute-container" class="countdown-container">
+                    <h1 class="countdown-number" id="num-min"></h1>
+                    <p class="countdown-label" id="min-label">Minutes</p>
+                </div>
+            </div>
+            
+            <div id="form-container">
+                <p id="join-us">Join our mailing list</p>
+                <form id="input-container">
+                    <input type="text" id="input-text" placeholder="enter your email..."/>
+                    <p id="btnSubmit">submit</p>
+                </form>
+            </div>
+            
+        </div>
+        <video autoplay muted loop id="video"><source src="Stadium.mp4" type="video/mp4"></video>
+        <div id="groupAD">
+            <div class="top-container">
+                <i class="fa-solid fa-xmark" id="btn-close-table"></i>
+                <div class="inner-container-top">
+                    <div class="group-container">
+                        <h3 class="group-header">Group A</h3>
+                        <h3 class="team">Ecuador</h3>
+                        <h3 class="team">Senegal</h3>
+                        <h3 class="team">Netherlands</h3>
+                        <h3 class="team">Qatar</h3>
+                    </div>
+                    <div class="group-container">
+                        <h3 class="group-header">Group B</h3>
+                        <h3 class="team">Wales</h3>
+                        <h3 class="team">Iran</h3>
+                        <h3 class="team">USA</h3>
+                        <h3 class="team">England</h3>
+                    </div>
+                    <div class="group-container">
+                        <h3 class="group-header">Group C</h3>
+                        <h3 class="team">Saudi Arabia</h3>
+                        <h3 class="team">Poland</h3>
+                        <h3 class="team">Mexico</h3>
+                        <h3 class="team">Argentina</h3>
+                    </div>
+                    <div class="group-container">
+                        <h3 class="group-header">Group D</h3>
+                        <h3 class="team">Austrlia</h3>
+                        <h3 class="team">Tunisia</h3>
+                        <h3 class="team">Denmark</h3>
+                        <h3 class="team">France</h3>
+                    </div>
+                </div>
+                <h1 id="group-title">GROUPS TABLE</h1>
+            </div>
+        </div>
+        <div id="groupEH">
+            <div class="inner-container-bottom">
+                <div class="group-container">
+                    <h3 class="group-header">Group E</h3>
+                    <h3 class="team">Costa Rica</h3>
+                    <h3 class="team">Japan</h3>
+                    <h3 class="team">Germany</h3>
+                    <h3 class="team">Spain</h3>
+                </div>
+                <div class="group-container">
+                    <h3 class="group-header">Group F</h3>
+                    <h3 class="team">Canada</h3>
+                    <h3 class="team">Morocco</h3>
+                    <h3 class="team">Croatia</h3>
+                    <h3 class="team">Belgium</h3>
+                </div>
+                <div class="group-container">
+                    <h3 class="group-header">Group G</h3>
+                    <h3 class="team">Cameroon</h3>
+                    <h3 class="team">Serbia</h3>
+                    <h3 class="team">Switzerland</h3>
+                    <h3 class="team">Brazil</h3>
+                </div>
+                <div class="group-container">
+                    <h3 class="group-header">Group H</h3>
+                    <h3 class="team">Ghana</h3>
+                    <h3 class="team">South Korea</h3>
+                    <h3 class="team">Uruguay</h3>
+                    <h3 class="team">Portugal</h3>
+                </div>
+            </div>
+        </div>
+        <div id="message-container-out">
+            <div id="message-container-in">
+                <i class="fa-solid fa-xmark" id="btn-close-message"></i>
+                <p id="message">#Email should contains @</p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>

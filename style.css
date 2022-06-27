@@ -1,0 +1,404 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.main-container{
+    max-width: 1100px;
+    width:100%;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden; 
+
+}
+
+#video {
+    z-index: -1;
+    width: 100%;
+    filter: brightness(0.7);
+    top:0px;
+    left:0px;
+    position: absolute;
+  }
+#content-container{
+    width: 100%;
+    height: 650px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#groupAD{
+    height: 50%;
+    width: 100%;
+    top:-50%;
+    left:0px;
+    position: absolute;
+    opacity: 0;
+    z-index:-2;
+    transition: all 0.5s linear;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#groupEH{
+    height: 50%;
+    width: 100%;
+    top:100vh;
+    left:0px;
+    position: absolute;
+    opacity: 0;
+    z-index:-2;
+    transition: all 0.5s linear;
+    display: flex;
+    justify-content: center;
+}
+.inner-container-bottom,
+.inner-container-top{
+    display: flex;
+    justify-content: center;
+}
+.inner-container-top{
+    align-items: flex-end;
+}
+.inner-container-bottom{
+    align-items: flex-start;
+    background-color: rgba(77, 136, 179, 0.7);
+    width: 80%;
+    height: 200px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.top-container{
+    background-color: rgba(77, 136, 179, 0.7);
+    color: black;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#btn-close-table{
+    color: orange;
+    margin: 10px 10px 0px 0px;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px black;
+}
+#btn-close-table:hover,
+#btn-close-table:active{
+    cursor: pointer;
+    color: white;
+}
+.top-container{
+    text-align: right;
+}
+
+#group-title{
+    text-align: center;
+    background-color: rgba(129, 22, 22, 0.7);
+    letter-spacing: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: double 5px rgb(193, 106, 0);
+    border-bottom: double 5px rgb(193, 106, 0);
+    color: rgb(239, 237, 255);
+}
+
+#groupAD{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#groupEH{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+#btn-detail{
+    background-color: rgba(4, 0, 255,0.5);
+    width: 140px;
+    margin-left: 200px;
+    text-align: center;
+    padding: 10px 0px;
+}
+#btn-detail:hover,
+#btn-detail:active{
+    cursor: pointer;
+    background-color: rgba(255,165,0,0.5)
+}
+
+#countdowns-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.countdown-label,
+.countdown-number{
+    margin:0px;
+}
+.countdown-number{
+    font-size: 100px;
+    text-shadow: 0px 0px 2px #cccccc;
+    position: relative;
+    top:30px;
+    font-weight: bold;
+}
+.countdown-label{
+    color: #777;
+    position: relative;
+    top:18px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 1px white
+}
+.group-container{
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    background-color: rgba(255,255,255,0.7)
+}
+.group-header,
+.team{
+    border: black 1px solid;
+    margin: 0px;
+    padding:5px 0px;
+    text-align: center;
+}
+.group-header{
+    background-color: rgb(51, 78, 152);
+    color: white;
+}
+
+#min-label{
+    letter-spacing: 5px;
+}
+
+
+.countdown-container{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: solid 2px white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.colon{
+    font-size: 60px;
+    margin-right: 20px;
+    color: #999;
+}
+#countdown-text{
+    margin-left: 50px;
+}
+
+#input-container{
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 40px;
+}
+#form-container{
+    display: flex;
+    align-items: center;
+    margin: 50px auto 0px auto;
+}
+#input-text{
+    font-size: 20px;
+    outline: 0px;
+    border: 0px;
+    margin-left: 10px;
+    padding: 5px 0px 5px 0px
+}
+
+#btnSubmit{
+    margin: 0px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding:5px 10px 5px 10px;
+}
+#btnSubmit:hover,
+#btnSubmit:active{
+    background-color: orange;
+    cursor: pointer;
+}
+#join-us{
+    font-size: 20px;
+    padding:10px 20px 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+#message-container-out{
+    position:absolute;
+    top:0px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    justify-content: center;
+    display: none;
+}
+#message-container-in{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(25% - 35px);
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    border: grey 5px solid;
+    text-align: right;
+}
+#btn-close-message{
+    color:black;
+    margin: 5px 5px 0px 0px;
+}
+
+#btn-close-message:hover,
+#btn-close-message:active{
+    color: orange;
+    cursor: pointer;
+}
+#message{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1000px){
+    #btn-detail{
+        margin-left: 50px;
+        text-align: center;
+    }
+    #content-container{
+        height: 500px;
+    }
+    #form-container{
+        margin-top: 20px;
+    }
+    #group-title{
+        font-size: 20px;
+    }
+    .group-container{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .countdown-container{
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    .countdown-number{
+        font-size: 60px;
+        top:20px;
+    }
+    .countdown-label{
+        top:15px;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    #content-container{
+        height: 400px;
+    }
+    #input-text{
+        font-size: 16px;
+        outline: 0px;
+        border: 0px;
+        margin-left: 10px;
+        padding: 2px 0px 2px 0px
+    }
+    
+    #btnSubmit{
+        margin: 0px;
+        height: 24px;
+        font-size: 16px;
+        color: white;
+        background-color: black;
+        padding:5px 10px 5px 10px;
+    }
+
+    #join-us{
+        font-size: 16px;
+        padding:8px 20px 8px 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    #input-container{
+        height: 30px;
+        margin-top: 0px;
+    }
+    #title-cup{
+        font-size: 18px;
+    }
+    #countdown-text{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    #btn-detail{
+        font-size: 12px;
+    }
+    #group-title{
+        display: none;
+    }
+    .group-container{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .countdown-container{
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    .countdown-number{
+        font-size: 36px;
+        top:20px;
+    }
+    .countdown-label{
+        top:15px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .colon{
+        font-size: 24px;
+    }
+    #content-container{
+        height: 240px;
+    }
+    #title-cup{
+        font-size: 16px;
+    }
+    #countdown-text{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .group-container{
+        font-size: 8px;
+    }
+    .team{
+        padding:2px;
+    }
+    .group-header{
+        padding: 2px;
+    }
+
+}
